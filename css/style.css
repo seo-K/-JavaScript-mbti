@@ -1,1 +1,68 @@
 @charset "uft-8";
+
+.main-page {
+  background: url(../images/main_bg.jpg) no-repeat center center / cover;
+}
+
+.questions-page {
+  background: url(../images//questions_bg.jpg) no-repeat center center / cover;
+}
+
+.questions-page progress {
+  width: 100%;
+  height: 1.8rem;
+
+  margin: 0 auto 5rem;
+}
+
+::-webkit-progress-bar {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: inset 3px 3px 10px rgb(238, 237, 237);
+}
+::-webkit-progress-value {
+  border-radius: 1rem;
+  background: var(--mainColor);
+  background: -webkit-linear-gradient(to right, #fdb85d, var(--mainColor));
+  background: linear-gradient(to right, #fdb85d, var(--mainColor));
+
+  transition: all 0.2s;
+}
+
+.questions-page section {
+  width: 100%;
+
+  padding: 2rem 1rem;
+
+  background: #fff;
+  box-shadow: 0 0 1rem rgb(211, 211, 211);
+  border-radius: 1rem;
+}
+
+.questions-page .question-number {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 800;
+  color: #13b491;
+}
+
+.questions-page .question {
+  font-size: 2.2rem;
+  text-align: center;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.questions-page .choice-button {
+  font-size: 1.3em;
+
+  color: #888;
+  background-color: #f2f4f6;
+  box-shadow: 0 0.5rem 0 #dfe1e2;
+  border-radius: 4rem;
+}
+
+.questions-page .choice-button:active {
+  box-shadow: 0 0.2rem 0 #dfe1e2;
+  transform: translateY(0.2rem);
+}

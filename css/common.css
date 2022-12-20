@@ -6,9 +6,12 @@ body {
 
 main {
   width: 70%;
+  height: 100%;
+  min-height: 100vh;
+
   margin: 0 auto;
 
-  padding: 2rem 0;
+  padding: 5rem 0;
 }
 
 hgroup {
@@ -22,8 +25,8 @@ hgroup {
   font-weight: 700;
   text-align: center;
 
-  color: #ffa32d;
-  border: 4px solid #ffa32d;
+  color: var(--mainColor);
+  border: 4px solid var(--mainColor);
   border-radius: 20rem;
 
   padding: 1rem 2rem;
@@ -55,6 +58,7 @@ hgroup {
 .button {
   display: inline-block;
   width: 25rem;
+  max-width: 100%;
 
   color: #fff;
   font-size: 2rem;
@@ -68,18 +72,18 @@ hgroup {
   transition: all 0.2s;
 }
 
-.button:active {
-  box-shadow: 0 4px 0 inset;
-  transform: translateY(0.2rem);
-}
-
 .button + .button {
   margin-top: 1.5rem;
 }
 
 .button-orange {
-  background-color: #ffa32d;
+  background-color: var(--mainColor);
   box-shadow: 0 0.5rem 0 #e66000;
+}
+
+.button-orange:active {
+  box-shadow: 0 0.2rem 0 #e66000;
+  transform: translateY(0.2rem);
 }
 
 .button-mint {
@@ -87,12 +91,25 @@ hgroup {
   box-shadow: 0 0.5rem 0 #299a82;
 }
 
-.button-gray {
-  background-color: #ffa32d;
-  box-shadow: 0 0.5rem 0 #e66000;
+.button-mint:active {
+  box-shadow: 0 0.2rem 0 #299a82;
+  transform: translateY(0.2rem);
 }
+
+.button-gray {
+  color: #444;
+  background-color: #f2f4f6;
+  box-shadow: 0 0.5rem 0 #dfe1e2;
+}
+
+.button-gray:active {
+  box-shadow: 0 0.2rem 0 #dfe1e2;
+  transform: translateY(0.2rem);
+}
+
 .button-small {
   width: 15rem;
+  font-size: 1.5rem;
 
   font-size: 1.2rem;
 }
