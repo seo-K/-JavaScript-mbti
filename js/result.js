@@ -20,66 +20,29 @@ const resultRecommendImg = document.querySelector(".recommend-link-wrap img");
 function getResult() {
   resultTitle.innerHTML = _result.title;
   resultImg.src = _result.character;
-  // resultDetail.innerHTML = _result.results;
 
-  const data = _result.results;
-  data.forEach((item) => {
+  const ResultDetailData = _result.results;
+  ResultDetailData.forEach((item) => {
     let li = document.createElement("li");
-    li.innerText = item;
+    li.innerHTML = item;
     resultDetail.appendChild(li);
   });
 
-  // let newJobList = resultJob.createElement("li");
-  // newDiv.appendChild(newJobList);
-  // newJobList.innerHTML = _result.jobs[0];
-
-  // for (let i = 0; i < 3; ++i) {
-  //   const li = document.createElement("li");
-  //   newJobList.innerHTML = `${_result.jobs}`;
-  // }
-
-  // resultJob.appendChild(li);
-
-  // _result.jobs.map((item, index) => )
-
-  // const data = _result.jobs;
-
-  // data.forEach((row) =>
-  //   resultJob.appendChild(
-  //     row.reduce((li, n) => {
-  //       li.appendChild(el("span")).innerHTML = n;
-  //       return li;
-  //     }, el("li"))
-  //   )
-  // );
-
-  data.forEach((item) => {
+  const ResultJobs = _result.jobs;
+  ResultJobs.forEach((item) => {
     let li = document.createElement("li");
-    li.innerText = item;
+    li.innerHTML = item;
     resultJob.appendChild(li);
   });
 
-  resultJob.innerHTML = _result.jobs;
+  // data.forEach((item) => {
+  //   let li = document.createElement("li");
+  //   li.innerText = item;
+  //   resultJob.appendChild(li);
+  // });
+
   resultRecommend.href = _result.lectureUrl;
   resultRecommendImg.src = _result.lectureImg;
 }
 
 getResult();
-// const _result = ["0.jpg", "1.png", "2.png"];
-
-// const chosenImage = _result[Math.floor(Math.random() * _result.length)];
-
-// const bgImage = document.createElement("img");
-
-// bgImage.src = `img/${chosenImage}`;
-
-// document.body.appendChild(bgImage);
-
-// const data = [[1,2,3],[4,5,6],[7,8,9]];
-// let table = document.querySelector('table')
-// data.forEach(row => table.appendChild(
-//   row.reduce((tr, n)=>{
-//     tr.appendChild(el('td')).innerHTML=n
-//     return tr
-//   }, el('tr'))
-// ))
