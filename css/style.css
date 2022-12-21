@@ -1,9 +1,18 @@
 @charset "uft-8";
 
+/* MAIN PAGE */
 .main-page {
   background: url(../images/main_bg.jpg) no-repeat center center / cover;
 }
 
+.main-page .character-wrap {
+  width: 20rem;
+  height: 25rem;
+
+  margin: 0 auto 2rem;
+}
+
+/* QUESTIONS PAGE */
 .questions-page {
   background: url(../images//questions_bg.jpg) no-repeat center center / cover;
 }
@@ -32,7 +41,7 @@
 .questions-page section {
   width: 100%;
 
-  padding: 2rem 1rem;
+  padding: 3rem 1rem 8rem;
 
   background: #fff;
   box-shadow: 0 0 1rem rgb(211, 211, 211);
@@ -67,24 +76,44 @@
   transform: translateY(0.2rem);
 }
 
+/* RESULTS PAGE */
 .results-page {
-  background: url(../images//result_bg.jpg) no-repeat center center / cover;
+  background: #eaf8ff url(../images//result_bg.jpg) no-repeat center center / cover;
 }
 
-.results-page .result-detail-wrap {
+.results-page .character-wrap {
+  width: 25rem;
+  height: auto;
+
+  margin: 0 auto;
+}
+
+.results-page section {
+  margin-bottom: 3rem;
+}
+
+.results-page article {
+  margin-top: 3rem;
 }
 
 .results-page h3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
-  margin-bottom: 0.375rem;
+  text-align: center;
+
+  margin-bottom: 1rem;
 }
 
 .results-page .result-detail-wrap li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 100%;
-  min-height: 10rem;
+  min-height: 8rem;
 
   font-size: 1.4rem;
+  font-weight: 600;
   text-align: center;
   padding: 1rem 0.5rem;
   background-color: #fff;
@@ -98,5 +127,37 @@
 
 .results-page .job-article {
 }
-.results-page .recommend-article {
+
+.results-page .job-list-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.results-page .job-list-wrap li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 1;
+  aspect-ratio: 1/1;
+
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 800;
+
+  background: #fff url(../images/result_star.png) no-repeat center / 70%;
+  border: 1px solid var(--mainColor);
+  border-radius: 1rem;
+}
+
+.results-page .job-list-wrap li + li {
+  margin-left: 0.5rem;
+}
+
+.results-page .recommend-link-wrap {
+  width: 100%;
+  height: auto;
+
+  border-radius: 1rem;
+  overflow: hidden;
 }

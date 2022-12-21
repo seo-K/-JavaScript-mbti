@@ -5,7 +5,9 @@ body {
 }
 
 main {
-  width: 70%;
+  max-width: 75rem;
+  width: 90%;
+  min-width: 20rem;
   height: 100%;
   min-height: 100vh;
 
@@ -19,7 +21,7 @@ hgroup {
 }
 
 .sub-title {
-  width: 10rem;
+  width: 12rem;
 
   font-size: 1.3rem;
   font-weight: 700;
@@ -41,13 +43,6 @@ hgroup {
 
   text-align: center;
   margin-top: 1rem;
-}
-
-.character-wrap {
-  width: 20rem;
-  height: 25rem;
-
-  margin: 0 auto 2rem;
 }
 
 .button-wrap {

@@ -1,4 +1,6 @@
-import { questions } from "./data.js";
+import { questions, results } from "./data.js";
+
+// QUESTION PAGE
 const progressValue = document.querySelector("progress");
 const numberEl = document.querySelector(".question-number");
 const questionEl = document.querySelector(".question");
